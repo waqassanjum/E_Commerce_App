@@ -27,6 +27,7 @@ class TTexts {
   static String phoneNo = "Phone Number";
   static String rememberMe = "Remember Me";
   static String forgetPassword = "Forget Password";
+  static String submit = "Submit";
   static String signIn = "Sign In";
   static String createAccount = "Create Account";
   static String orSignInWith = "Or Sign In With";
@@ -37,6 +38,8 @@ class TTexts {
   static String termsOfUse = "Terms Of Use";
   static String verificationCode = "Verification Code";
   static String resendEmail = "Resend Email";
+  static String tContinue = "Continue";
+  static String done = "Done";
   static String resendEmailIn = "Resend email In";
 
   // Home
@@ -53,12 +56,14 @@ class TTexts {
       "Don't Worry SomeTimes Passwords are Hard to Remember";
   static String changeYourPasswordTitle = "Password Reset Email sent";
   static String changeYourPasswordSubTitle =
-      "Please Check Your Email to Reset Your Password";
-  static String confirmEmail = "Confirm Email";
+      "Your Account Security is Our Priority we've send you a secure link to safely change your password and keep your account secure";
+  static String confirmEmail = "verify Your Email Address";
   static String confirmEmailSubTitle =
       "Please Check Your Email to Confirm Your Account";
   static String emailNotReceivedMessage = "Email Not Received?";
-  static String yourAccountCreated = "Your Account Created";
+  static String yourAccountCreated = "Your Account Successfully Created";
   static String yourAccountCreatedSubTitle =
-      "Your Account has been Created Successfully";
+      "welcome to your ultimate shopping destination: Your Account is Ready, unleash the joy of seamless online shopping";
+
+  // Home
 }

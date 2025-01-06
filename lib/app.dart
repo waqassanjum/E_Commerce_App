@@ -1,4 +1,5 @@
-import 'package:e_commerce/features/authentication/screen/onboarding/onboarding.dart';
+import 'package:e_commerce/features/shop/screens/home/widgets/home.dart';
+
 import 'package:get/get.dart';
 
 import 'utils/theme/theme.dart';
@@ -16,7 +17,8 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      home: const OnBoardingScreen(),
+      home: const HomeScreen(),
+      // home: const OnBoardingScreen(),
     );
   }
 }

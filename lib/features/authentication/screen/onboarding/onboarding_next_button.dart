@@ -4,7 +4,6 @@ import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/device/device_utility.dart';
 import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class OnBoardingNextButton extends StatelessWidget {
   const OnBoardingNextButton({
@@ -23,8 +22,8 @@ class OnBoardingNextButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
             shape: const CircleBorder(),
             backgroundColor: dark ? TColors.primary : Colors.black),
-        child: const Icon(
-          Iconsax.arrow_right_3,
+        child: Icon(
+          Icons.arrow_forward,
           color: Colors.white,
         ),
       ),

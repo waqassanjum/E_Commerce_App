@@ -23,6 +23,7 @@ dependencies:
   flutter_native_splash: ^2.4.3
   smooth_page_indicator: ^1.2.0+3
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -35,7 +36,9 @@ flutter:
     - assets/fonts/
     - assets/icons/brand/
     - assets/images/on_boarding_images/
+    - assets/images/animations/
     - assets/logos/
+    - assets/icons/categories/
   fonts:
     - family: Poppins
       fonts:
@@ -52,3 +55,8 @@ flutter:
           style: italic
         - asset: assets/fonts/Poppins-SemiBold.ttf
           weight: 600
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-Italic-VariableFont.ttf
+        - asset: assets/fonts/NotoSans-VariableFont.ttf
+          weight: 700

@@ -1,9 +1,10 @@
+import 'package:e_commerce/features/authentication/screen/password_config/forget_password.dart';
 import 'package:e_commerce/features/authentication/screen/signup/signup.dart';
+import 'package:e_commerce/navigation_menu.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class TLoginForm extends StatelessWidget {
   const TLoginForm({
@@ -20,17 +21,16 @@ class TLoginForm extends StatelessWidget {
           children: [
             TextFormField(
               decoration: InputDecoration(
-                  prefixIcon: Icon(Iconsax.direct_right),
-                  labelText: TTexts.email),
+                  prefixIcon: Icon(Icons.email), labelText: TTexts.email),
             ),
 
             const SizedBox(height: TSizes.spaceBtwInputField),
             // Password
             TextFormField(
               decoration: InputDecoration(
-                  prefixIcon: Icon(Iconsax.password_check),
+                  prefixIcon: Icon(Icons.password),
                   labelText: TTexts.password,
-                  suffixIcon: Icon(Iconsax.eye_slash)),
+                  suffixIcon: Icon(Icons.visibility)),
             ),
             const SizedBox(height: TSizes.spaceBtwInputField / 2),
             // remember me and forget password
@@ -46,7 +46,7 @@ class TLoginForm extends StatelessWidget {
                 ),
                 // forget Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgetPassword()),
                   child: Text(TTexts.forgetPassword),
                 ),
               ],
@@ -56,7 +56,8 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: Text(TTexts.signIn))),
+                    onPressed: () => Get.to(() => NavigationMenu()),
+                    child: Text(TTexts.signIn))),
             const SizedBox(height: TSizes.spaceBtwItems),
             // Create a New Account Button
             SizedBox(

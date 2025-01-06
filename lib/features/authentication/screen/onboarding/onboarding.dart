@@ -1,8 +1,8 @@
 import 'package:e_commerce/features/authentication/controllers_onboarding/onboarding_controller.dart';
-import 'package:e_commerce/features/authentication/screen/login/widgets/onboarding_dot_navigation.dart';
-import 'package:e_commerce/features/authentication/screen/login/widgets/onboarding_next_button.dart';
-import 'package:e_commerce/features/authentication/screen/login/widgets/onboarding_page.dart';
-import 'package:e_commerce/features/authentication/screen/login/widgets/onboarding_skip.dart';
+import 'package:e_commerce/features/authentication/screen/onboarding/onboarding_dot_navigation.dart';
+import 'package:e_commerce/features/authentication/screen/onboarding/onboarding_next_button.dart';
+import 'package:e_commerce/features/authentication/screen/onboarding/onboarding_page.dart';
+import 'package:e_commerce/features/authentication/screen/onboarding/onboarding_skip.dart';
 import 'package:e_commerce/utils/constants/images_strings.dart';
 import 'package:e_commerce/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
