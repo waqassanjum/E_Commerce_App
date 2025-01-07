@@ -1,4 +1,5 @@
-import 'package:e_commerce/features/shop/screens/home/widgets/home.dart';
+// import 'package:e_commerce/features/authentication/screen/onboarding/onboarding.dart';
+import 'package:e_commerce/features/shop/screens/home/home.dart';
 
 import 'package:get/get.dart';
 
