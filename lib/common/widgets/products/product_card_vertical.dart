@@ -2,7 +2,9 @@ import 'package:e_commerce/common/styles/rounded_container.dart';
 import 'package:e_commerce/common/styles/shadows.dart';
 import 'package:e_commerce/common/widgets/images/t_rounded_images.dart';
 import 'package:e_commerce/common/widgets/products/icons/t_circular.dart';
+import 'package:e_commerce/common/widgets/products/product_price/product_price_text.dart';
 import 'package:e_commerce/common/widgets/texts/product_title.dart';
+import 'package:e_commerce/common/widgets/texts/t_brand_title_text_with_verification_icon.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/images_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -29,7 +31,7 @@ class TProductCardVertical extends StatelessWidget {
           children: [
             // Thumbnails, wishlist button, discount
             TRoundedContainer(
-              height: 100,
+              height: 190,
               padding: EdgeInsets.all(TSizes.sm),
               backgroundColor: dark ? TColors.dark : TColors.light,
               child: Stack(
@@ -84,58 +86,43 @@ class TProductCardVertical extends StatelessWidget {
                   SizedBox(
                     height: TSizes.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        'Laptop',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(
-                        width: TSizes.xs,
-                      ),
-                      Icon(
-                        Icons.verified,
-                        color: Colors.blue,
-                        size: TSizes.iconXs,
-                      )
-                    ],
+                  TBrandTitleWithVerificationIcon(
+                    title: 'Laptop',
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      //price
-                      Text(
-                        "\$200.50",
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: TColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(TSizes.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(TSizes.productImageRadius),
-                          ),
-                        ),
-                        child: SizedBox(
-                          width: TSizes.iconLg * 1.2,
-                          height: TSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Icons.add,
-                              color: TColors.white,
-                            ),
-                          ),
-                        ),
-                      )
-                    ],
-                  )
                 ],
               ),
+            ),
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                //price
+                Padding(
+                  padding: const EdgeInsets.only(left: TSizes.sm),
+                  child: TProductPriceText(
+                    price: '50.2',
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: TColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(TSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(TSizes.productImageRadius),
+                    ),
+                  ),
+                  child: SizedBox(
+                    width: TSizes.iconLg * 1.2,
+                    height: TSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Icons.add,
+                        color: TColors.white,
+                      ),
+                    ),
+                  ),
+                )
+              ],
             )
           ],
         ),
