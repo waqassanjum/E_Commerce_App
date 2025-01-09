@@ -76,20 +76,23 @@ class TProductCardVertical extends StatelessWidget {
             // Details
             Padding(
               padding: EdgeInsets.only(left: TSizes.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  TProductTitleText(
-                    title: 'Laptop on 25% off',
-                    smallSize: true,
-                  ),
-                  SizedBox(
-                    height: TSizes.spaceBtwItems / 2,
-                  ),
-                  TBrandTitleWithVerificationIcon(
-                    title: 'Laptop',
-                  ),
-                ],
+              child: SizedBox(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    TProductTitleText(
+                      title: 'Laptop on 25% off',
+                      smallSize: true,
+                    ),
+                    SizedBox(
+                      height: TSizes.spaceBtwItems / 2,
+                    ),
+                    TBrandTitleWithVerificationIcon(
+                      title: 'Laptop',
+                    ),
+                  ],
+                ),
               ),
             ),
             Spacer(),
@@ -103,6 +106,8 @@ class TProductCardVertical extends StatelessWidget {
                     price: '50.2',
                   ),
                 ),
+                //Add to cart button
+
                 Container(
                   decoration: BoxDecoration(
                     color: TColors.dark,
