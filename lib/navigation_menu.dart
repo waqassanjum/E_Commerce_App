@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/personalization/screens/setting/setting.dart';
 import 'package:e_commerce/features/shop/screens/home/home.dart';
 import 'package:e_commerce/features/shop/screens/store/store.dart';
 import 'package:e_commerce/features/shop/screens/wishlist/wishlist.dart';
@@ -13,31 +14,26 @@ class NavigationMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.put(NavigationController());
     final darkMode = THelperFunction.isDarkMode(context);
-
     return Scaffold(
-      bottomNavigationBar: Obx(
-        () => NavigationBar(
-          height: 80,
-          elevation: 0,
-          selectedIndex: controller.selectedIndex.value,
-          onDestinationSelected: (index) =>
-              controller.selectedIndex.value = index,
-          backgroundColor: darkMode ? TColors.black : Colors.white,
-          indicatorColor: darkMode
-              ? TColors.white.withAlpha(25)
-              : Colors.black.withAlpha(25),
-          destinations: [
-            NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-            NavigationDestination(icon: Icon(Icons.shop), label: 'Shop'),
-            NavigationDestination(
-                icon: Icon(Icons.favorite), label: 'Wishlist'),
-            NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
-          ],
-        ),
-      ),
-      body: Obx(
-        () => controller.screens[controller.selectedIndex.value],
-      ),
+      bottomNavigationBar: Obx(() => NavigationBar(
+            height: 80,
+            elevation: 0,
+            selectedIndex: controller.selectedIndex.value,
+            onDestinationSelected: (index) =>
+                controller.selectedIndex.value = index,
+            backgroundColor: darkMode ? TColors.black : TColors.white,
+            indicatorColor: darkMode
+                ? TColors.white.withAlpha(25)
+                : TColors.black.withAlpha(25),
+            destinations: [
+              NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+              NavigationDestination(icon: Icon(Icons.shop), label: 'Store'),
+              NavigationDestination(
+                  icon: Icon(Icons.favorite), label: 'Wishlist'),
+              NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+            ],
+          )),
+      body: Obx(() => controller.screens[controller.selectedIndex.value]),
     );
   }
 }
@@ -48,9 +44,7 @@ class NavigationController extends GetxController {
   final screens = [
     const HomeScreen(),
     const StoreScreen(),
-    FavoriteScreen(),
-    Container(
-      color: Colors.blue,
-    )
+    const FavoriteScreen(),
+    const SettingScreen(),
   ];
 }

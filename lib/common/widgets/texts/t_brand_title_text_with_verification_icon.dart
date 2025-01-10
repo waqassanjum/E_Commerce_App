@@ -10,10 +10,11 @@ class TBrandTitleWithVerificationIcon extends StatelessWidget {
     this.textColor,
     this.maxLines = 1,
     required this.title,
-    this.iconColor = TColors.primary,
+    this.iconColor,
     this.textAlign = TextAlign.center,
     this.brandTextSize = TextSize.small,
   });
+
   final String title;
   final int maxLines;
   final Color? textColor, iconColor;
@@ -22,13 +23,15 @@ class TBrandTitleWithVerificationIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
         Flexible(
           child: TBrandTitleText(
             title: title,
-            color: textColor,
+            color: textColor ?? (isDark ? Colors.white : Colors.black),
             maxLines: maxLines,
             textAlign: textAlign,
             brandTextSize: brandTextSize,
@@ -39,7 +42,7 @@ class TBrandTitleWithVerificationIcon extends StatelessWidget {
         ),
         Icon(
           Icons.verified,
-          color: Colors.blue,
+          color: iconColor ?? (isDark ? TColors.primary : Colors.blue),
           size: TSizes.iconXs,
         )
       ],

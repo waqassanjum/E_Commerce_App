@@ -58,7 +58,7 @@ class TTextFormFieldTheme {
     ),
     focusedBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.black12),
+      borderSide: const BorderSide(width: 1, color: Colors.grey),
     ),
     errorBorder: OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),

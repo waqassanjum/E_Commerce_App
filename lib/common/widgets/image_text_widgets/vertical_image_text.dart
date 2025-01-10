@@ -34,7 +34,7 @@ class TVerticalImageText extends StatelessWidget {
               padding: EdgeInsets.all(TSizes.sm),
               decoration: BoxDecoration(
                 color:
-                    backgroundColor ?? (dark ? TColors.black : TColors.warning),
+                    backgroundColor ?? (dark ? TColors.black : TColors.white),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
@@ -46,10 +46,11 @@ class TVerticalImageText extends StatelessWidget {
             ),
             SizedBox(height: TSizes.spaceBtwItems / 2),
             SizedBox(
-              width: 55,
+              width: 60,
               child: Text(
                 //shoes category
                 title,
+
                 style: Theme.of(context)
                     .textTheme
                     .labelMedium!
