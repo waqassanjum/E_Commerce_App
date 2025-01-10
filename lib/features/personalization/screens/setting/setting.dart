@@ -3,9 +3,11 @@ import 'package:e_commerce/common/widgets/custom_shape/container/primary_header_
 import 'package:e_commerce/common/widgets/list_tiles/setting_menu_title.dart';
 import 'package:e_commerce/common/widgets/list_tiles/user_profile_tiles.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce/features/authentication/screen/login/widgets/login_screen.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
@@ -110,8 +112,9 @@ class SettingScreen extends StatelessWidget {
                   // LogOut Button
                   SizedBox(
                     width: double.infinity,
-                    child:
-                        OutlinedButton(onPressed: () {}, child: Text('Logout')),
+                    child: OutlinedButton(
+                        onPressed: () => Get.to(() => LoginScreen()),
+                        child: Text('Logout')),
                   ),
                   SizedBox(
                     height: TSizes.spaceBtwSection * 2.5,
