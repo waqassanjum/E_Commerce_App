@@ -4,9 +4,8 @@ import 'package:e_commerce/utils/constants/images_strings.dart';
 import 'package:flutter/material.dart';
 
 class TUserProfile extends StatelessWidget {
-  const TUserProfile({
-    super.key,
-  });
+  const TUserProfile({super.key, required this.onPressed});
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +29,7 @@ class TUserProfile extends StatelessWidget {
             .apply(color: TColors.white),
       ),
       trailing: IconButton(
-          onPressed: () {}, icon: Icon(Icons.edit, color: TColors.white)),
+          onPressed: onPressed, icon: Icon(Icons.edit, color: TColors.white)),
     );
   }
 }

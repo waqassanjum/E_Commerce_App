@@ -8,30 +8,25 @@ class TProductPriceText extends StatelessWidget {
     this.isLarge = false,
     this.maxLines = 1,
     this.lineThrough = false,
-    this.color, // Optional custom color
+    // Optional custom color
   });
 
   final String currencySign, price;
   final int maxLines;
   final bool isLarge;
   final bool lineThrough;
-  final Color? color;
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-
     return Text(
-      '$currencySign$price',
+      currencySign + price,
       maxLines: maxLines,
       overflow: TextOverflow.ellipsis,
-      style: (isLarge
-              ? Theme.of(context).textTheme.headlineMedium
-              : Theme.of(context).textTheme.titleLarge)
-          ?.copyWith(
-        color: color ?? (isDark ? Colors.white : Colors.black),
-        decoration: lineThrough ? TextDecoration.lineThrough : null,
-      ),
+      style: isLarge
+          ? Theme.of(context).textTheme.headlineMedium!.apply(
+              decoration: lineThrough ? TextDecoration.lineThrough : null)
+          : Theme.of(context).textTheme.titleLarge!.apply(
+              decoration: lineThrough ? TextDecoration.lineThrough : null),
     );
   }
 }
