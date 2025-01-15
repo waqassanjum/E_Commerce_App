@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widgets/bottom_add_to_cart.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widgets/product_attributes.dart';
@@ -17,6 +15,7 @@ class ProductDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     final dark = THelperFunction.isDarkMode(context);
     return Scaffold(
       bottomNavigationBar: TBottomAddToCart(),
