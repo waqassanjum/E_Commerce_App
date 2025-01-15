@@ -4,7 +4,7 @@ import 'package:e_commerce/common/widgets/social_button.dart';
 import 'package:e_commerce/features/authentication/screen/login/widgets/widget/login_form.dart';
 import 'package:e_commerce/features/authentication/screen/login/widgets/widget/login_header.dart';
 import 'package:e_commerce/utils/constants/text_string.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -13,7 +13,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunction.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -21,7 +20,7 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
               // Logo, Title and subtitle
-              TLoginHeader(dark: dark),
+              TLoginHeader(),
 
               // Form
               TLoginForm(),

@@ -220,4 +220,16 @@ class TImages {
   static const String productImage80 =
       "assets/images/products/shirt_yellow_collar.png";
   static const String productImage81 = "assets/images/products/user_img.jpg";
+
+  // Brands
+  static const String acer1 = "assets/icons/brand/acer_logo.png";
+  static const String adidas2 = "assets/icons/brand/adidas-logo.png";
+  static const String apple3 = "assets/icons/brand/apple-logo.png";
+  static const String herman4 = "assets/icons/brand/herman-miller-logo.png";
+  static const String ikea5 = "assets/icons/brand/ikea_logo.png";
+  static const String jordan6 = "assets/icons/brand/jordan-logo.png";
+  static const String kenwood7 = "assets/icons/brand/kenwood-logo.png";
+  static const String nike8 = "assets/icons/brand/nike.png";
+  static const String puma9 = "assets/icons/brand/puma-logo.png";
+  static const String zara10 = "assets/icons/brand/zara-logo.png";
 }

@@ -49,9 +49,9 @@ class TColors {
 
   // Natural Shade
   static const Color black = Color(0XFF232323);
-  static const Color darkerGrey = Color(0XFF4f4f4f);
+  static const Color darkerGrey = Color(0XFF4F4F4F);
   static const Color darkGrey = Color(0XFF939393);
-  static const Color grey = Color(0XFFe0e0e0);
+  static const Color grey = Color(0xff4F4F4F);
   static const Color softGrey = Color(0XFFf4f4f4);
   static const Color lightGrey = Color(0XFFf9f9f9);
   static const Color white = Color(0XFFffffff);

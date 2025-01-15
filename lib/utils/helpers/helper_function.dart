@@ -60,6 +60,8 @@ class THelperFunction {
       return Colors.lightGreen;
     } else if (value == 'Blue Grey') {
       return Colors.blueGrey;
+    } else if (value == 'yellow') {
+      return Colors.yellow;
     } else {
       return null;
     }

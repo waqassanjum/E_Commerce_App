@@ -1,18 +1,20 @@
 import 'package:e_commerce/utils/constants/images_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/text_string.dart';
+import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 class TLoginHeader extends StatelessWidget {
   const TLoginHeader({
     super.key,
-    required this.dark,
+    // required this.dark,
   });
 
-  final bool dark;
+  // final bool dark;
 
   @override
   Widget build(BuildContext context) {
+    final dark = THelperFunction.isDarkMode(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
