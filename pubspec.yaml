@@ -24,6 +24,7 @@ dependencies:
   smooth_page_indicator: ^1.2.0+3
   carousel_slider: ^5.0.0
   readmore: ^3.0.0
+  flutter_rating_bar: ^4.0.1
 
 
 dev_dependencies:
@@ -44,6 +45,7 @@ flutter:
     - assets/images/banner/
     - assets/images/products/
     - assets/images/user/
+    - assets/images/reviews/
   fonts:
     - family: Poppins
       fonts:

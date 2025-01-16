@@ -232,4 +232,12 @@ class TImages {
   static const String nike8 = "assets/icons/brand/nike.png";
   static const String puma9 = "assets/icons/brand/puma-logo.png";
   static const String zara10 = "assets/icons/brand/zara-logo.png";
+
+  // User Profile Images
+  static const String userProfileImage1 =
+      "assets/images/reviews/review_profile_image_1.jpg";
+  static const String userProfileImage2 =
+      "assets/images/reviews/review_profile_image_2.jpeg";
+  static const String userProfileImage3 =
+      "assets/images/reviews/review_profile_image_3.jpeg";
 }

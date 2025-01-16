@@ -4,6 +4,7 @@ import 'package:e_commerce/common/widgets/list_tiles/setting_menu_title.dart';
 import 'package:e_commerce/common/widgets/list_tiles/user_profile_tiles.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/features/authentication/screen/login/widgets/login_screen.dart';
+import 'package:e_commerce/features/personalization/screens/address/widget/address.dart';
 import 'package:e_commerce/features/personalization/screens/profile/profile.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -53,9 +54,11 @@ class SettingScreen extends StatelessWidget {
                     height: TSizes.spaceBtwItems,
                   ),
                   TSettingMenuTile(
-                      icon: Icons.home,
-                      title: 'My Address',
-                      subTitle: 'Set Shopping Address'),
+                    icon: Icons.home,
+                    title: 'My Address',
+                    subTitle: 'Set Shopping Address',
+                    onTap: () => Get.to(() => UserAddressScreen()),
+                  ),
                   TSettingMenuTile(
                       icon: Icons.shopping_cart,
                       title: 'My Cart',

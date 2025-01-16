@@ -4,10 +4,12 @@ import 'package:e_commerce/features/shop/screens/product_details/widgets/product
 import 'package:e_commerce/features/shop/screens/product_details/widgets/product_detail_image_slider.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widgets/rating_share_widget.dart';
+import 'package:e_commerce/features/shop/screens/product_reviews/widgets/product_reviews.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_function.dart';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:readmore/readmore.dart';
 
 class ProductDetail extends StatelessWidget {
@@ -61,7 +63,7 @@ class ProductDetail extends StatelessWidget {
                   ),
                   SizedBox(height: TSizes.spaceBtwItems),
                   ReadMoreText(
-                    'this is the product description for any product that you can see above picture later you can change it or update the description as well you want',
+                    'This is the product description for any product that you can see above picture later you can change it or update the description as well you want',
                     trimLines: 2,
                     trimMode: TrimMode.Line,
                     trimCollapsedText: 'Show More',
@@ -82,7 +84,7 @@ class ProductDetail extends StatelessWidget {
                         showActionButton: false,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => ProductReviewsScreen()),
                         icon: Icon(
                           Icons.arrow_right,
                           size: 18,

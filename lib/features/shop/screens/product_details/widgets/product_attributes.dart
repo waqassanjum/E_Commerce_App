@@ -19,7 +19,9 @@ class ProductAttributes extends StatelessWidget {
         // selected Attribute Pricing and Description
         TRoundedContainer(
           padding: EdgeInsets.all(TSizes.md),
-          backgroundColor: dark ? TColors.darkerGrey : TColors.grey,
+          backgroundColor: dark
+              ? TColors.darkerGrey
+              : const Color.fromARGB(255, 246, 244, 244),
           child: Column(
             children: [
               // Title, Price and Stack Status
