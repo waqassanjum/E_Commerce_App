@@ -43,7 +43,7 @@ class TBrandCard extends StatelessWidget {
             /// -- Icon
             Flexible(
               child: TCircularImage(
-                image: TImages.clothIcon,
+                image: TImages.nike8,
                 isNetworkImage: false,
                 backgroundColor: Colors.transparent,
                 overlayColor: isDark ? TColors.white : TColors.black,
@@ -60,7 +60,9 @@ class TBrandCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TBrandTitleWithVerificationIcon(
-                      title: 'Nike', brandTextSize: TextSize.large),
+                    title: 'Nike',
+                    brandTextSize: TextSize.large,
+                  ),
                   Text(
                     ' 256 Products',
                     overflow: TextOverflow.ellipsis,

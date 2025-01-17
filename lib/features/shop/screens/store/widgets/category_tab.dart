@@ -7,7 +7,9 @@ import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class TCategoryTab extends StatelessWidget {
-  const TCategoryTab({super.key});
+  const TCategoryTab({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +32,8 @@ class TCategoryTab extends StatelessWidget {
               TBrandShowCase(
                 images: [
                   TImages.productImage43,
-                  TImages.productImage38,
-                  TImages.productImage44
+                  TImages.productImage45,
+                  TImages.productImage46
                 ],
               ),
               SizedBox(height: TSizes.spaceBtwItems),

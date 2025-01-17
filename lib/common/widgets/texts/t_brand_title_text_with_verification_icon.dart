@@ -16,6 +16,7 @@ class TBrandTitleWithVerificationIcon extends StatelessWidget {
   });
 
   final String title;
+
   final int maxLines;
   final Color? textColor, iconColor;
   final TextAlign? textAlign;

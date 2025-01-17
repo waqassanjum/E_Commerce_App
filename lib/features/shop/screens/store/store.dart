@@ -47,7 +47,7 @@ class StoreScreen extends StatelessWidget {
                       TSearchContainer(
                           text: 'Search In Store',
                           showBorder: true,
-                          showBackground: false,
+                          showBackground: true,
                           padding: EdgeInsets.zero),
                       SizedBox(height: TSizes.spaceBtwItems),
 
@@ -63,9 +63,9 @@ class StoreScreen extends StatelessWidget {
                         itemCount: 4,
                         mainAxisExtent: 80,
                         itemBuilder: (_, index) {
-                          return TBrandCard(showBorder: false);
+                          return TBrandCard(showBorder: true);
                         },
-                      )
+                      ),
                     ],
                   ),
                 ),

@@ -13,12 +13,34 @@ class THomeCategories extends StatelessWidget {
       height: 80,
       child: ListView.builder(
         shrinkWrap: true,
-        itemCount: 6,
+        itemCount: 9,
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
+          final images = [
+            TImages.cosmeticsIcon,
+            TImages.clothIcon,
+            TImages.electronicIcon,
+            TImages.furnitureIcon,
+            TImages.jewelryIcon,
+            TImages.shoeIcon,
+            TImages.sportIcon,
+            TImages.toyIcon,
+            TImages.animalIcon,
+          ];
+          final title = [
+            'Cosmetics',
+            'Clothing',
+            'Electronic',
+            'Furniture',
+            'Jewelry',
+            'Shoe',
+            'Sport',
+            'Toy',
+            'Animal',
+          ];
           return TVerticalImageText(
-            image: TImages.cosmeticsIcon,
-            title: 'Name Items',
+            image: images[index],
+            title: title[index],
             onTap: () {},
           );
         },
