@@ -1,6 +1,6 @@
 import 'package:e_commerce/common/widgets/custom_shape/container/circular_container.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class TChoiceChip extends StatelessWidget {
@@ -17,7 +17,7 @@ class TChoiceChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isColor = THelperFunction.getColor(text) != null;
+    final isColor = THelperFunctions.getColor(text) != null;
     return Theme(
       data: Theme.of(context).copyWith(canvasColor: Colors.transparent),
       child: ChoiceChip(
@@ -29,12 +29,12 @@ class TChoiceChip extends StatelessWidget {
             ? TCircularContainer(
                 width: 50,
                 height: 50,
-                backgroundColor: THelperFunction.getColor(text)!)
+                backgroundColor: THelperFunctions.getColor(text)!)
             : null,
         labelPadding: isColor ? EdgeInsets.all(0) : null,
         padding: isColor ? EdgeInsets.all(0) : null,
         shape: isColor ? CircleBorder() : null,
-        backgroundColor: isColor ? THelperFunction.getColor(text)! : null,
+        backgroundColor: isColor ? THelperFunctions.getColor(text)! : null,
       ),
     );
   }

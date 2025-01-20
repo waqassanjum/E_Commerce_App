@@ -5,8 +5,9 @@ import 'package:e_commerce/features/shop/screens/product_details/widgets/product
 import 'package:e_commerce/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widgets/rating_share_widget.dart';
 import 'package:e_commerce/features/shop/screens/product_reviews/widgets/product_reviews.dart';
+import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +19,7 @@ class ProductDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ignore: unused_local_variable
-    final dark = THelperFunction.isDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
       bottomNavigationBar: TBottomAddToCart(),
       body: SingleChildScrollView(
@@ -63,15 +64,20 @@ class ProductDetail extends StatelessWidget {
                   ),
                   SizedBox(height: TSizes.spaceBtwItems),
                   ReadMoreText(
-                    'This is the product description for any product that you can see above picture later you can change it or update the description as well you want',
+                    'This is the product description for any product that you can see above picture later you can change it or update the description as well you want  ',
                     trimLines: 2,
                     trimMode: TrimMode.Line,
                     trimCollapsedText: 'Show More',
                     trimExpandedText: 'Less',
-                    moreStyle:
-                        TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
-                    lessStyle:
-                        TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+                    moreStyle: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w800,
+                        color: TColors.primary),
+                    lessStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w800,
+                      color: TColors.primary,
+                    ),
                   ),
                   // reviews
                   Divider(),
@@ -92,7 +98,7 @@ class ProductDetail extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(height: TSizes.spaceBtwSection),
+                  SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
             ),

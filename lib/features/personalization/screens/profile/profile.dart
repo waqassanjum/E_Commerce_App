@@ -3,7 +3,7 @@ import 'package:e_commerce/common/widgets/images/t_circular_image.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/features/personalization/screens/profile/widgets/profile_menu.dart';
 import 'package:e_commerce/features/personalization/screens/setting/setting.dart';
-import 'package:e_commerce/utils/constants/images_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 // import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';

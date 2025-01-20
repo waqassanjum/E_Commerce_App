@@ -1,6 +1,6 @@
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class TCircularImage extends StatelessWidget {
@@ -30,7 +30,7 @@ class TCircularImage extends StatelessWidget {
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         color: backgroundColor ??
-            (THelperFunction.isDarkMode(context)
+            (THelperFunctions.isDarkMode(context)
                 ? TColors.black
                 : TColors.white),
         borderRadius: BorderRadius.circular(100),

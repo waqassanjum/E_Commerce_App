@@ -1,7 +1,7 @@
-import 'package:e_commerce/utils/constants/images_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/constants/text_string.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/constants/text_strings.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -28,10 +28,10 @@ class ResetPassword extends StatelessWidget {
             children: [
               Image(
                 image: AssetImage(TImages.productsSaleIllustration),
-                width: THelperFunction.screenHeight() * 0.6,
+                width: THelperFunctions.screenHeight() * 0.6,
               ),
               SizedBox(
-                height: TSizes.spaceBtwSection,
+                height: TSizes.spaceBtwSections,
               ),
               // Title and Subtitle
               Text(

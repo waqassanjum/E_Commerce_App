@@ -2,7 +2,7 @@ import 'package:e_commerce/features/authentication/screen/password_config/forget
 import 'package:e_commerce/features/authentication/screen/signup/signup.dart';
 import 'package:e_commerce/navigation_menu.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/constants/text_string.dart';
+import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,7 +14,7 @@ class TLoginForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: TSizes.spaceBtwSection),
+      padding: const EdgeInsets.symmetric(vertical: TSizes.spaceBtwSections),
       child: Form(
         child: Column(
           // Email
@@ -28,7 +28,7 @@ class TLoginForm extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: TSizes.spaceBtwInputField),
+            const SizedBox(height: TSizes.spaceBtwInputFields),
             // Password
             TextFormField(
               decoration: InputDecoration(
@@ -36,7 +36,7 @@ class TLoginForm extends StatelessWidget {
                   labelText: TTexts.password,
                   suffixIcon: Icon(Icons.visibility)),
             ),
-            const SizedBox(height: TSizes.spaceBtwInputField / 2),
+            const SizedBox(height: TSizes.spaceBtwInputFields / 2),
             // remember me and forget password
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -55,7 +55,7 @@ class TLoginForm extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: TSizes.spaceBtwSection),
+            SizedBox(height: TSizes.spaceBtwSections),
             // Sign In Button
             SizedBox(
                 width: double.infinity,

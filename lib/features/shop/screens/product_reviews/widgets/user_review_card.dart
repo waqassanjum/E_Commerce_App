@@ -1,9 +1,9 @@
 import 'package:e_commerce/common/styles/rounded_container.dart';
 import 'package:e_commerce/common/widgets/products/ratings/rating_indicator.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/images_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
 
@@ -14,7 +14,7 @@ class UserReviewCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunction.isDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return Column(
       children: [
         Row(

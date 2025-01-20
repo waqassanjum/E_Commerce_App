@@ -12,7 +12,7 @@ class TBrandTitleWithVerificationIcon extends StatelessWidget {
     required this.title,
     this.iconColor = TColors.primary,
     this.textAlign = TextAlign.center,
-    this.brandTextSize = TextSize.small,
+    this.brandTextSize = TextSizes.small,
   });
 
   final String title;
@@ -20,7 +20,7 @@ class TBrandTitleWithVerificationIcon extends StatelessWidget {
   final int maxLines;
   final Color? textColor, iconColor;
   final TextAlign? textAlign;
-  final TextSize brandTextSize;
+  final TextSizes brandTextSize;
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 import 'package:e_commerce/features/authentication/screen/signup/verify_email.dart';
 import 'package:e_commerce/features/authentication/screen/signup/widgets/term_condition_checkbox.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/constants/text_string.dart';
+import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -24,7 +24,7 @@ class TSignupForm extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(width: TSizes.spaceBtwInputField),
+              SizedBox(width: TSizes.spaceBtwInputFields),
               Expanded(
                 child: TextFormField(
                   expands: false,
@@ -36,16 +36,16 @@ class TSignupForm extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: TSizes.spaceBtwInputField),
+          SizedBox(height: TSizes.spaceBtwInputFields),
           //username
           TextFormField(
             expands: false,
             decoration: InputDecoration(
-              labelText: TTexts.userName,
+              labelText: TTexts.username,
               prefixIcon: Icon(Icons.person_2),
             ),
           ),
-          SizedBox(height: TSizes.spaceBtwInputField),
+          SizedBox(height: TSizes.spaceBtwInputFields),
           //password
           //email
           TextFormField(
@@ -55,7 +55,7 @@ class TSignupForm extends StatelessWidget {
               prefixIcon: Icon(Icons.email),
             ),
           ),
-          SizedBox(height: TSizes.spaceBtwInputField),
+          SizedBox(height: TSizes.spaceBtwInputFields),
           //phone number
           TextFormField(
             expands: false,
@@ -64,7 +64,7 @@ class TSignupForm extends StatelessWidget {
               prefixIcon: Icon(Icons.call),
             ),
           ),
-          SizedBox(height: TSizes.spaceBtwInputField),
+          SizedBox(height: TSizes.spaceBtwInputFields),
           //password
           TextFormField(
             obscureText: true,
@@ -74,10 +74,10 @@ class TSignupForm extends StatelessWidget {
               suffixIcon: Icon(Icons.visibility),
             ),
           ),
-          SizedBox(height: TSizes.spaceBtwSection),
+          SizedBox(height: TSizes.spaceBtwSections),
           //Term and conditions
           TTermAndConditionCheckBox(),
-          SizedBox(height: TSizes.spaceBtwSection),
+          SizedBox(height: TSizes.spaceBtwSections),
           // Sign Up Button
           SizedBox(
             width: double.infinity,

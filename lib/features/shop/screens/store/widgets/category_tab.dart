@@ -2,7 +2,7 @@ import 'package:e_commerce/common/widgets/brands/brand_show_case.dart';
 import 'package:e_commerce/common/widgets/layout/grid_layout.dart';
 import 'package:e_commerce/common/widgets/products/product_card_vertical.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
-import 'package:e_commerce/utils/constants/images_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +24,7 @@ class TCategoryTab extends StatelessWidget {
               // Brands
               TBrandShowCase(
                 images: [
-                  TImages.productImage38,
+                  TImages.productImage37,
                   TImages.productImage43,
                   TImages.productImage44
                 ],

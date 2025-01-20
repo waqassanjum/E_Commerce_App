@@ -1,45 +1,49 @@
-import 'custom_themes/appbar_theme.dart';
-import 'custom_themes/botton_sheet_theme.dart';
-import 'custom_themes/checkbox_theme.dart';
-import 'custom_themes/chip_theme.dart';
-import 'custom_themes/elevated_button_theme.dart';
-import 'custom_themes/outlined_button.dart';
-import 'custom_themes/text_field_theme.dart';
-import 'custom_themes/text_theme.dart';
+import 'package:e_commerce/utils/theme/widget_themes/appbar_theme.dart';
+import 'package:e_commerce/utils/theme/widget_themes/bottom_sheet_theme.dart';
+import 'package:e_commerce/utils/theme/widget_themes/checkbox_theme.dart';
+import 'package:e_commerce/utils/theme/widget_themes/chip_theme.dart';
+import 'package:e_commerce/utils/theme/widget_themes/elevated_button_theme.dart';
+import 'package:e_commerce/utils/theme/widget_themes/outlined_button_theme.dart';
+import 'package:e_commerce/utils/theme/widget_themes/text_field_theme.dart';
+import 'package:e_commerce/utils/theme/widget_themes/text_theme.dart';
 import 'package:flutter/material.dart';
+
+import '../constants/colors.dart';
 
 class TAppTheme {
   TAppTheme._();
-// Light Theme
+
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'poppins',
+    fontFamily: 'Poppins',
+    disabledColor: TColors.grey,
     brightness: Brightness.light,
-    primaryColor: Colors.blue,
+    primaryColor: TColors.primary,
     textTheme: TTextTheme.lightTextTheme,
     chipTheme: TChipTheme.lightChipTheme,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: TColors.white,
     appBarTheme: TAppBarTheme.lightAppBarTheme,
     checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
     bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.lightOutLineButtonTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
   );
-  // Dark Theme
+
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'poppins',
-    brightness: Brightness.light,
-    primaryColor: Colors.blue,
+    fontFamily: 'Poppins',
+    disabledColor: TColors.grey,
+    brightness: Brightness.dark,
+    primaryColor: TColors.primary,
     textTheme: TTextTheme.darkTextTheme,
     chipTheme: TChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: TColors.black,
     appBarTheme: TAppBarTheme.darkAppBarTheme,
     checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
     bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.darkOutLineButtonTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
   );
 }

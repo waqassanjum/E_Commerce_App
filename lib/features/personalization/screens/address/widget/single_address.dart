@@ -1,7 +1,7 @@
 import 'package:e_commerce/common/styles/rounded_container.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class TSingleAddress extends StatelessWidget {
@@ -12,7 +12,7 @@ class TSingleAddress extends StatelessWidget {
   final bool selectedAddress;
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunction.isDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return TRoundedContainer(
       padding: EdgeInsets.all(TSizes.md),
       width: double.infinity,

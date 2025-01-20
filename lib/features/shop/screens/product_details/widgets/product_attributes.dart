@@ -5,7 +5,7 @@ import 'package:e_commerce/common/widgets/texts/product_title.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class ProductAttributes extends StatelessWidget {
@@ -13,7 +13,7 @@ class ProductAttributes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunction.isDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return Column(
       children: [
         // selected Attribute Pricing and Description
@@ -92,7 +92,7 @@ class ProductAttributes extends StatelessWidget {
                 TChoiceChip(
                     text: 'Blue', selected: false, onSelected: (value) {}),
                 TChoiceChip(
-                    text: 'yellow', selected: false, onSelected: (value) {}),
+                    text: 'Yellow', selected: false, onSelected: (value) {}),
               ],
             )
           ],

@@ -3,9 +3,10 @@ import 'package:e_commerce/common/widgets/custom_shape/curved_edge/curved_edges_
 import 'package:e_commerce/common/widgets/images/t_rounded_images.dart';
 import 'package:e_commerce/common/widgets/products/icons/t_circular.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/images_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
+
 import 'package:flutter/material.dart';
 
 class TProductImageSlider extends StatelessWidget {
@@ -15,7 +16,7 @@ class TProductImageSlider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunction.isDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return TCurvedEdgesWidgets(
       child: Container(
         color: dark ? TColors.darkerGrey : TColors.light,

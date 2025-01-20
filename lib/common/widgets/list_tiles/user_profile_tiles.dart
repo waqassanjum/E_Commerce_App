@@ -1,6 +1,6 @@
 import 'package:e_commerce/common/widgets/images/t_circular_image.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/images_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class TUserProfile extends StatelessWidget {

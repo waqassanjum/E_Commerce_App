@@ -1,6 +1,6 @@
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class TCircularIcon extends StatelessWidget {
@@ -29,7 +29,7 @@ class TCircularIcon extends StatelessWidget {
       decoration: BoxDecoration(
         color: backgroundColor != null
             ? backgroundColor!
-            : THelperFunction.isDarkMode(context)
+            : THelperFunctions.isDarkMode(context)
                 ? TColors.black.withAlpha(20)
                 : TColors.white.withAlpha(20),
         borderRadius: BorderRadius.circular(100),

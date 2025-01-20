@@ -34,7 +34,7 @@ class ProductReviewsScreen extends StatelessWidget {
                 '12,655',
                 style: Theme.of(context).textTheme.bodySmall,
               ),
-              SizedBox(height: TSizes.spaceBtwSection),
+              SizedBox(height: TSizes.spaceBtwSections),
 
               // user Review List
               UserReviewCard(),

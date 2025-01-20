@@ -1,5 +1,5 @@
 import 'package:e_commerce/common/widgets/image_text_widgets/vertical_image_text.dart';
-import 'package:e_commerce/utils/constants/images_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class THomeCategories extends StatelessWidget {
@@ -19,9 +19,9 @@ class THomeCategories extends StatelessWidget {
           final images = [
             TImages.cosmeticsIcon,
             TImages.clothIcon,
-            TImages.electronicIcon,
+            TImages.electronicsIcon,
             TImages.furnitureIcon,
-            TImages.jewelryIcon,
+            TImages.jeweleryIcon,
             TImages.shoeIcon,
             TImages.sportIcon,
             TImages.toyIcon,

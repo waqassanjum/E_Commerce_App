@@ -3,7 +3,7 @@ import 'package:e_commerce/common/widgets/form_divider.dart';
 import 'package:e_commerce/common/widgets/social_button.dart';
 import 'package:e_commerce/features/authentication/screen/login/widgets/widget/login_form.dart';
 import 'package:e_commerce/features/authentication/screen/login/widgets/widget/login_header.dart';
-import 'package:e_commerce/utils/constants/text_string.dart';
+import 'package:e_commerce/utils/constants/text_strings.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

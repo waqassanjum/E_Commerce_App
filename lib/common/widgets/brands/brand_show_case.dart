@@ -2,7 +2,8 @@ import 'package:e_commerce/common/styles/rounded_container.dart';
 import 'package:e_commerce/common/widgets/brands/brand_card.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
+
 import 'package:flutter/material.dart';
 
 class TBrandShowCase extends StatelessWidget {
@@ -42,7 +43,7 @@ Widget brandTopProductImageWidget(String image, context) {
       height: 100,
       padding: EdgeInsets.all(TSizes.md),
       margin: EdgeInsets.only(right: TSizes.sm),
-      backgroundColor: THelperFunction.isDarkMode(context)
+      backgroundColor: THelperFunctions.isDarkMode(context)
           ? TColors.darkGrey
           : TColors.light,
       child: Image(fit: BoxFit.contain, image: AssetImage(image)),

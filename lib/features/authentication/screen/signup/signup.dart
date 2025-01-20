@@ -2,7 +2,7 @@ import 'package:e_commerce/common/widgets/form_divider.dart';
 import 'package:e_commerce/common/widgets/social_button.dart';
 import 'package:e_commerce/features/authentication/screen/signup/widgets/signup_form.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/constants/text_string.dart';
+import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,14 +20,14 @@ class SignupScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Title
-              Text(TTexts.signUpTitle,
+              Text(TTexts.signupTitle,
                   style: Theme.of(context).textTheme.headlineMedium),
-              SizedBox(height: TSizes.spaceBtwSection),
+              SizedBox(height: TSizes.spaceBtwSections),
               // Form
               TSignupForm(),
               // divider
               TFormDivider(dividerText: TTexts.orSignInWith.capitalize!),
-              SizedBox(height: TSizes.spaceBtwSection),
+              SizedBox(height: TSizes.spaceBtwSections),
               // social button
               const TSocialButton(),
 

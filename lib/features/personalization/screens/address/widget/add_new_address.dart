@@ -22,13 +22,13 @@ class AddNewAddress extends StatelessWidget {
                     decoration: InputDecoration(
                         prefixIcon: Icon(Icons.person), labelText: 'Name')),
                 SizedBox(
-                  height: TSizes.spaceBtwInputField,
+                  height: TSizes.spaceBtwInputFields,
                 ),
                 TextFormField(
                     decoration: InputDecoration(
                         prefixIcon: Icon(Icons.mobile_friendly),
                         labelText: 'Phone Number')),
-                SizedBox(height: TSizes.spaceBtwInputField),
+                SizedBox(height: TSizes.spaceBtwInputFields),
                 Row(
                   children: [
                     Expanded(
@@ -37,7 +37,7 @@ class AddNewAddress extends StatelessWidget {
                               prefixIcon: Icon(Icons.house),
                               labelText: 'Street')),
                     ),
-                    SizedBox(width: TSizes.spaceBtwInputField),
+                    SizedBox(width: TSizes.spaceBtwInputFields),
                     Expanded(
                       child: TextFormField(
                           decoration: InputDecoration(
@@ -46,7 +46,7 @@ class AddNewAddress extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: TSizes.spaceBtwInputField),
+                SizedBox(height: TSizes.spaceBtwInputFields),
                 Row(
                   children: [
                     Expanded(
@@ -55,7 +55,7 @@ class AddNewAddress extends StatelessWidget {
                               prefixIcon: Icon(Icons.location_city),
                               labelText: 'city')),
                     ),
-                    SizedBox(width: TSizes.spaceBtwInputField),
+                    SizedBox(width: TSizes.spaceBtwInputFields),
                     Expanded(
                       child: TextFormField(
                           decoration: InputDecoration(
@@ -64,7 +64,7 @@ class AddNewAddress extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: TSizes.spaceBtwInputField),
+                SizedBox(height: TSizes.spaceBtwInputFields),
                 TextFormField(
                     decoration: InputDecoration(
                         prefixIcon: Icon(Icons.public), labelText: 'Country')),

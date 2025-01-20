@@ -36,7 +36,7 @@ class SettingScreen extends StatelessWidget {
 
                   // user profile card
                   TUserProfile(onPressed: () => Get.to(() => ProfileScreen())),
-                  SizedBox(height: TSizes.spaceBtwSection),
+                  SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
             ),
@@ -85,7 +85,7 @@ class SettingScreen extends StatelessWidget {
                       subTitle: 'Manage Data usage and connected accounts'),
 
                   // App Setting
-                  SizedBox(height: TSizes.spaceBtwSection),
+                  SizedBox(height: TSizes.spaceBtwSections),
                   TSectionHeading(
                       title: 'App Setting', showActionButton: false),
                   SizedBox(height: TSizes.spaceBtwItems),
@@ -121,7 +121,7 @@ class SettingScreen extends StatelessWidget {
                         child: Text('Logout')),
                   ),
                   SizedBox(
-                    height: TSizes.spaceBtwSection * 2.5,
+                    height: TSizes.spaceBtwSections * 2.5,
                   ),
                 ],
               ),

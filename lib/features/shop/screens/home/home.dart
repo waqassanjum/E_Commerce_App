@@ -6,7 +6,7 @@ import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/promo_slider.dart';
-import 'package:e_commerce/utils/constants/images_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -26,10 +26,10 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   //AppBar
                   THomeAppBar(),
-                  SizedBox(height: TSizes.spaceBtwSection),
+                  SizedBox(height: TSizes.spaceBtwSections),
                   // searchBar
                   TSearchContainer(text: 'Search In Store'),
-                  SizedBox(height: TSizes.spaceBtwSection),
+                  SizedBox(height: TSizes.spaceBtwSections),
                   // Categories
                   Padding(
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: TSizes.spaceBtwSection,
+                    height: TSizes.spaceBtwSections,
                   )
                 ],
               ),
@@ -64,13 +64,9 @@ class HomeScreen extends StatelessWidget {
                       TImages.promoBanner1,
                       TImages.promoBanner2,
                       TImages.promoBanner3,
-                      TImages.promoBanner4,
-                      TImages.promoBanner5,
-                      TImages.promoBanner6,
-                      TImages.promoBanner7,
                     ],
                   ),
-                  SizedBox(height: TSizes.spaceBtwSection),
+                  SizedBox(height: TSizes.spaceBtwSections),
 
                   //Heading
                   TSectionHeading(title: 'Popular Products', onPressed: () {}),

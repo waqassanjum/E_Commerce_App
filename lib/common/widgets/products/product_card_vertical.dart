@@ -7,9 +7,9 @@ import 'package:e_commerce/common/widgets/texts/product_title.dart';
 import 'package:e_commerce/common/widgets/texts/t_brand_title_text_with_verification_icon.dart';
 import 'package:e_commerce/features/shop/screens/product_details/product_details.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/images_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,7 +20,7 @@ class TProductCardVertical extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunction.isDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: () => Get.to(() => ProductDetail()),
       child: Container(
@@ -52,7 +52,7 @@ class TProductCardVertical extends StatelessWidget {
                       radius: TSizes.sm,
                       backgroundColor: TColors.secondary.withAlpha(40),
                       padding: EdgeInsets.symmetric(
-                          horizontal: TSizes.sm, vertical: TSizes.xxs),
+                          horizontal: TSizes.sm, vertical: TSizes.xs),
                       child: Text(
                         '25%',
                         style: Theme.of(context)
