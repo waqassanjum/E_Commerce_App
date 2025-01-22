@@ -6,6 +6,8 @@ import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/features/authentication/screen/login/widgets/login_screen.dart';
 import 'package:e_commerce/features/personalization/screens/address/widget/address.dart';
 import 'package:e_commerce/features/personalization/screens/profile/profile.dart';
+import 'package:e_commerce/features/shop/screens/cart/cart.dart';
+import 'package:e_commerce/features/shop/screens/order/order.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -60,13 +62,17 @@ class SettingScreen extends StatelessWidget {
                     onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   TSettingMenuTile(
-                      icon: Icons.shopping_cart,
-                      title: 'My Cart',
-                      subTitle: 'Add or Remove Product and move to checkout'),
+                    icon: Icons.shopping_cart,
+                    title: 'My Cart',
+                    subTitle: 'Add or Remove Product and move to checkout',
+                    onTap: () => Get.to(() => CartScreen()),
+                  ),
                   TSettingMenuTile(
-                      icon: Icons.shopping_bag,
-                      title: 'My Orders',
-                      subTitle: 'In Progress aor Complete Order'),
+                    icon: Icons.shopping_bag,
+                    title: 'My Orders',
+                    subTitle: 'In Progress aor Complete Order',
+                    onTap: () => Get.to(() => OrderScreen()),
+                  ),
                   TSettingMenuTile(
                       icon: Icons.account_balance,
                       title: 'Bank Account',
