@@ -26,7 +26,7 @@ class TImages {
       "assets/icons/categories/icons8-wooden-toy-car-50.png";
   static const String furnitureIcon =
       "assets/icons/categories/icons8-dining-chair-64.png";
-  static const String jeweleryIcon =
+  static const String jewelryIcon =
       "assets/icons/categories/icons8-sparkling-diamond-64.png";
   static const String electronicsIcon =
       "assets/icons/categories/icons8-smartphone-64.png";

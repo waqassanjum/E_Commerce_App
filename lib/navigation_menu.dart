@@ -27,10 +27,10 @@ class NavigationMenu extends StatelessWidget {
                 : TColors.black.withAlpha(25),
             destinations: [
               NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-              NavigationDestination(icon: Icon(Icons.shop), label: 'Store'),
+              NavigationDestination(icon: Icon(Icons.shop), label: 'Movie'),
               NavigationDestination(
-                  icon: Icon(Icons.favorite), label: 'Wishlist'),
-              NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+                  icon: Icon(Icons.favorite), label: 'Check'),
+              NavigationDestination(icon: Icon(Icons.person), label: 'Inbox'),
             ],
           )),
       body: Obx(() => controller.screens[controller.selectedIndex.value]),
